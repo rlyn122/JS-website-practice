@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Simple Counter</p>
-    <label id="countLabel">0</label><br>
-    <div class="button-container">
-    <button id="decreaseBtn">decrease</button>
-    <button id="resetBtn">reset</button>
-    <button id="increaseBtn">increase</button>
+    <div id="title">
+    <h1>Pomodoro Timer</h1>
+    <p>Set your timer for 25 minutes, and focus on a single task until the timer rings. When your session ends, mark off one pomodoro and record what you completed. Then enjoy a five-minute break. After four pomodoros, take a longer, more restorative 15-30 minute break.</p>
+</div>
+    <div id="timeContainer">
+        <h2 id="workStatus">Work Time:</h2>
+        <h2 id="numCycles">You've lasted 0 cycles</h2>
+        <div id="timeDisplay">25:00</div>
+        <button id="startBtn" class="timerBtn">Start</button>
+        <button id="resetBtn" class="timerBtn">Reset</button>
     </div>
-
     <script src="index.js"></script>
 </body>
 </html>
